@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Second Hand Book</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+<div class="container">
+<h1> Second Hand Book Marketplace</h1>
+<h3>Buy and Sell Second Hand Books</h3>
+<div id="books">
+<div class="book">
+            <h2> Java Programming</h2>
+            <p>Rs.250</p>
+            <button onclick="buyBook('Java Programming',250)">
+                Buy
+            </button>
+            <button onclick="deleteBook(this)">Delete</button>
+        </div>
+        <div class="book">
+            <h2> Python Basics</h2>
+            <p>Rs.300</p>
+            <button onclick="buyBook('Python Basics',300)"> Buy</button>
+             <button onclick="deleteBook(this)">Delete</button>
+        </div>
+        <div class="book">
+            <h2>Data structure</h2>
+            <p>Rs.300</p>
+            <button onclick="buyBook('Python Basics',300)">Buy </button>
+            <button onclick="deleteBook(this)"> Delete
+            </button>
+        </div></div>
+        <h2> Sell Your Book</h2>
+        <input type="text" id="title" placeholder="Book Title">
+        <input type="text" id="author" placeholder="Author">
+        <input type="number" id="price" placeholder="Price">
+        <button onclick="sellBook()">Sell Book</button>
+        <h2> Buyer Details</h2>
+         <table>
+            <tr>
+            <th>Buyer Name</th>
+            <th>Phone</th>
+            <th>Book</th>
+            <th>Price</th>
+            <th>Date</th>
+        </tr>
+         <tbody id="buyerDetails"></tbody>
+        </table>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
