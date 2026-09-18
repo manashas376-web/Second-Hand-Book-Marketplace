@@ -1,0 +1,61 @@
+body {
+    font-family: Arial;
+    background: #f2f0f8;
+
+}
+.container {
+    width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+}
+h1 {
+    background: purple;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+h3 {
+
+    text-align: center;
+
+}
+#books {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.book {
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 5px gray;
+}
+button {
+    padding: 8px 15px;
+    border: none;
+    background: purple;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+.book button:last-child {
+     background: red;
+}
+input {
+    padding: 10px;
+    margin: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th {
+    background: #eeeeee;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid gray;
+    text-align: center;
+}
